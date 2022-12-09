@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* 게시판 CSS */
+#board_wrap {
+    font-family: 'Noto Sans KR',sans-serif;
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 80px;
+    margin-top: 80px;
+    text-align: left;
+}
+#board_wrap>a {
+    text-decoration: none;
+}
+#board_wrap .title {
+    color: #333333;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    width: 158px;
+    padding-bottom: 60px;
+}
+/* 라인 */
+.title:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #333;
+}
+.board_info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#board_wrap .board_info .board_info_spanbox {
+    height: 65px;
+    line-height: 65px;
+    width: 300px;
+    float: left;
+}
+#board_wrap .board_info span {
+    color: #777777;
+}
+#board_wrap .board_info {
+    border-bottom: 2px solid #000;
+}
+#board_wrap .board_info_search form {
+    color: #777777;
+    border: 1px solid #adadad;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#board_wrap .board_info_search {
+    width: 335px;
+    height: 45px;
+}
+#board_wrap .board_info_search form input {
+    padding-left: 20px;
+}
+#board_wrap .board_info_search form input[type=text] {
+    border: none;
+}
+#board_wrap .board_info_search form i {
+    line-height: 45px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-left: 1px solid #adadad;
+    font-size: 24px;
+}
+.board_object_box {
+    width: 1100px; 
+}
+.board_object li {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 90px;
+    line-height: 90px;
+    border-bottom: 1px solid #adadad;
+}
+.board_object li::after {
+    clear: both;
+    content: '';
+}
+.board_object li .board_num {
+    width: 80px;
+    height: 90px;
+    line-height: 90px;
+    color: #080;
+    font-size: 36px;
+    font-family: 'Noto Sans_KR', sans-serif;
+    letter-spacing: -1px;
+    float: left;
+}
+.board_object li .board_category {
+    float: left;
+    font-size: 12px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 36px;
+    color: #fff;
+    background-color: #2B5DB2;
+    margin-right: 12px;
+    
+}
+.board_object li a {
+    width: 810px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 18px;
+    color: #333;
+    float: left;
+    text-decoration: none;
+    transition: all 100ms;
+}
+.board_object li a:hover {
+    color: red;
+}
+.board_object li a p {
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+.board_object li .board_date {
+    width: 130px;
+    height: 90px;
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    color: #808080;
+    font-weight: 300;
+}
+.board_pager {
+    text-align: center;
+    margin-top: 30px;
+}
+.board_pager a {
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    border: 1px solid #adadad;
+    display: inline-block;
+    color: #666;
+    transition: all 200ms;
+}
+.board_pager a p {
+    letter-spacing: -1px;
+}
+.board_pager a:hover {
+    background-color: #666;
+    color: #fff;
+}
+.board_pager img {
+    align-items: center;
+    padding-top: 6px;
+}
+.board_write_btn {
+    position: relative;
+    width: 1100px;
+    height: 10px;
+}
+.board_write_btn input {
+    position: absolute;
+    background: rgb(226, 226, 226);
+    border: 1px solid rgb(165, 165, 165);
+    width: 80px;
+    height: 40px;
+    right: 0;
+    border-radius: 20px;
+    color: #333;
+    font-weight: 600;
+    transition: all 80ms;
+    top: -40px;
+}
+.board_write_btn input:hover {
+    background: #2B5DB2;
+    color: #fff;
+    cursor: pointer;
+}
+/* 게시판 CSS 끝 */

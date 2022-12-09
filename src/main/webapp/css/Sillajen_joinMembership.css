@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* 회원가입 페이지 CSS */
+#login_wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#login_wrap {
+    position: static;
+}
+#login_wrap figure {
+    position: absolute;
+}
+#login_wrap figure video {
+    width: 1920px;
+}
+#login_wrap form{
+    position: absolute;
+    width: 400px;
+    height: 540px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 2%;
+    padding: 20px;
+}
+.login_box {
+    font-family: 'Montserrat', sans-serif;
+}
+.login_box h2 {
+    font-weight: bold;
+    color: #1C66A6;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.login_box p {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #5c5c5c;
+}
+.login_box input {
+    width: 360px;
+    height: 44px;
+    background-color: #f2f2f2;
+    margin-bottom: 26px;
+}
+.login_box .button_box {
+    text-align: center;
+    padding-top: 40px;
+}
+.login_box .button_box input {
+    width: 100px;
+    height: 36px;
+}
+.login_box .button_box input[type=reset] {
+    background-color: gray;
+    color: #ffffff;
+}
+.login_box .button_box input[type=submit] {
+    background-color: #1C66A6;
+    color: #ffffff;
+}
+.login_box a {
+    text-align: center;
+}
+.login_box a p {
+    font-size: 12px;
+}
+.login_logo {
+    width: 100px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    width: 400px;
+}
+.login_box p:last-child{
+    text-align: center;
+    padding-top: 16px;
+    font-size: 18px;
+}
+.login_box select {
+    width: 100%; 
+    text-align: center; 
+    color: #5c5c5c;
+}
+
+/* 회원가입 페이지 CSS 끝 */
